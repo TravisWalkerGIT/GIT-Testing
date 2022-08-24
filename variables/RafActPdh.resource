@@ -1,0 +1,3 @@
+*** Variables ***
+${SRC_SNAPSHOT_DATE} =   202106
+${TGT_EFFCTV_END_DATE} =   '2021-06-30'

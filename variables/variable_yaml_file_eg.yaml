@@ -1,0 +1,10 @@
+# https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#resource-and-variable-files
+string:   Hello, world!
+integer:  42
+list:
+  - one
+  - two
+dict:
+  one: yksi
+  two: kaksi
+  with spaces: kolme
