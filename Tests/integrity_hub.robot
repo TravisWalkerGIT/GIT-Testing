@@ -2,6 +2,7 @@
 Library           DatabaseLibrary
 Library           Dialogs
 Resource          ../resources/cloudera.resource
+Resource          ./../../variables/vault_variable_names.resource
 Suite Setup       Perform Test Suite Setup
 Suite Teardown    Perform Test Suite Teardown
 
@@ -20,16 +21,16 @@ Suite Teardown    Perform Test Suite Teardown
                     
 
 *** Variables ***
-${hub_test_1_sql} =    select count(*) FROM groupbi_ads_e698063_spflab.skyreality_full_data
-${hub_test_2_sql} =    select count(*) FROM groupbi_ads_e698063_spflab.skyreality_full_data where pty_id = NULL
-${hub_test_3_sql} =    select count(*),pty_id FROM groupbi_ads_e698063_spflab.skyreality_full_data group by pty_id having count(*) > 1
-${hub_test_4_sql} =    select count(*),pty_id FROM groupbi_ads_e698063_spflab.skyreality_full_data group by pty_id having count(*) > 1
-${hub_test_5_sql} =    select count(*) from groupbi_ads_e698063_spflab.skyreality_full_data where pty_id not in (select pty_id from groupbi_lablive_spflab.car_history)
+${hub_test_1_sql} =    select count(*) FROM ${TABLE_NAME}
+${hub_test_2_sql} =    select count(*) FROM ${TABLE_NAME} where pty_id = NULL
+${hub_test_3_sql} =    select count(*),pty_id FROM ${TABLE_NAME} group by pty_id having count(*) > 1
+${hub_test_4_sql} =    select count(*),pty_id FROM ${TABLE_NAME} group by pty_id having count(*) > 1
+${hub_test_5_sql} =    select count(*) from ${TABLE_NAME} where pty_id not in (select pty_id from groupbi_lablive_spflab.car_history)
 
 *** Test Cases ***
 UC18DWH241_US1_Testcase1: Monthly File Reconciliation (File: Enforce Non-Funeral- S224.ALL.IF.Mccyymm)
     [Documentation]  LDWBI-485 - Reconcile 3 new monthly files which contains the inforce data for Legacy Non Funeral (Q1 - Jan - Mar, Q2 - April - Jun, Q3 - July - Sep, Q4 - Oct- Dec) to the original quarterly files on an attribute level grain using the same parameters (i.e. Date range) ( File: S224.ALL.IF.Mccyymm)
-    [Tags]  null_check
+    [Tags]  integrity
       Database connection
       Hub test 0: Record count to ensure that the hub is loaded
       Hub test 1: No null business keys / hashkeys in current set (from staging)

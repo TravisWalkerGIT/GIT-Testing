@@ -36,7 +36,7 @@ UC18DWH241_US1_Testcase1: Monthly File Reconciliation (File: Enforce Non-Funeral
 Hub test 0:Record count distinct Hub VS distinct Source table
       ${hub_test_1}    DatabaseLibrary.Query    ${hub_test_1_sql}    sansTran=True
       ${result_1}=    Set Variable    ${hub_test_1[0][0]}
-      Should Be Equal As Integers    0    ${result_1}  
+      Should Not Be Equal As Integers    0    ${result_1}  
 
 Hub test 1: Distinct business key source table vs hub
       ${hub_test_2}    DatabaseLibrary.Query    ${hub_test_2_sql}    sansTran=True
