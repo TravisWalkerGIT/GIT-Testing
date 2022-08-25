@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.6 on win32)" generated="20220824 14:41:15.847" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.6 on win32)" generated="20220824 16:06:09.143" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\E698063\Rotation 3 - SDH\GIT Testing\Tests">
 <suite id="s1-s1" name="Integrity Hub" source="C:\Users\E698063\Rotation 3 - SDH\GIT Testing\Tests\integrity_hub.robot">
 <kw name="Perform Test Suite Setup" library="cloudera" type="SETUP">
@@ -7,56 +7,56 @@
 <var>${OLD_LOG_LEVEL}</var>
 <arg>TRACE</arg>
 <doc>Sets the log threshold to the specified level and returns the old level.</doc>
-<msg timestamp="20220824 14:41:15.931" level="INFO">Log level changed from INFO to TRACE.</msg>
-<msg timestamp="20220824 14:41:15.931" level="TRACE">Return: 'INFO'</msg>
-<msg timestamp="20220824 14:41:15.931" level="INFO">${OLD_LOG_LEVEL} = INFO</msg>
-<status status="PASS" starttime="20220824 14:41:15.931" endtime="20220824 14:41:15.931"/>
+<msg timestamp="20220824 16:06:09.208" level="INFO">Log level changed from INFO to TRACE.</msg>
+<msg timestamp="20220824 16:06:09.208" level="TRACE">Return: 'INFO'</msg>
+<msg timestamp="20220824 16:06:09.208" level="INFO">${OLD_LOG_LEVEL} = INFO</msg>
+<status status="PASS" starttime="20220824 16:06:09.208" endtime="20220824 16:06:09.208"/>
 </kw>
 <kw name="Get Value From User" library="Dialogs">
 <var>${DB_USERNAME_LCL}</var>
 <arg>Username:</arg>
 <doc>Pauses test execution and asks user to input a value.</doc>
-<msg timestamp="20220824 14:41:15.931" level="TRACE">Arguments: [ 'Username:' ]</msg>
-<msg timestamp="20220824 14:41:18.453" level="TRACE">Return: 'e698063'</msg>
-<msg timestamp="20220824 14:41:18.453" level="INFO">${DB_USERNAME_LCL} = e698063</msg>
-<status status="PASS" starttime="20220824 14:41:15.931" endtime="20220824 14:41:18.453"/>
+<msg timestamp="20220824 16:06:09.208" level="TRACE">Arguments: [ 'Username:' ]</msg>
+<msg timestamp="20220824 16:06:21.871" level="TRACE">Return: 'e698063'</msg>
+<msg timestamp="20220824 16:06:21.879" level="INFO">${DB_USERNAME_LCL} = e698063</msg>
+<status status="PASS" starttime="20220824 16:06:09.208" endtime="20220824 16:06:21.879"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${DB_USERNAME}</arg>
 <arg>${DB_USERNAME_LCL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220824 14:41:18.453" level="TRACE">Arguments: [ '${DB_USERNAME}' | '${DB_USERNAME_LCL}' ]</msg>
-<msg timestamp="20220824 14:41:18.453" level="INFO">${DB_USERNAME} = e698063</msg>
-<msg timestamp="20220824 14:41:18.453" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220824 14:41:18.453" endtime="20220824 14:41:18.453"/>
+<msg timestamp="20220824 16:06:21.879" level="TRACE">Arguments: [ '${DB_USERNAME}' | '${DB_USERNAME_LCL}' ]</msg>
+<msg timestamp="20220824 16:06:21.879" level="INFO">${DB_USERNAME} = e698063</msg>
+<msg timestamp="20220824 16:06:21.879" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220824 16:06:21.879" endtime="20220824 16:06:21.879"/>
 </kw>
 <kw name="Get Value From User" library="Dialogs">
 <var>${DB_USER_PASSWORD_LCL}</var>
 <arg>Password:</arg>
 <arg>hidden=yes</arg>
 <doc>Pauses test execution and asks user to input a value.</doc>
-<msg timestamp="20220824 14:41:18.461" level="TRACE">Arguments: [ 'Password:' | hidden=True ]</msg>
-<msg timestamp="20220824 14:41:24.556" level="TRACE">Return: '$22tbgmphrpftdoh'</msg>
-<msg timestamp="20220824 14:41:24.556" level="INFO">${DB_USER_PASSWORD_LCL} = $22tbgmphrpftdoh</msg>
-<status status="PASS" starttime="20220824 14:41:18.453" endtime="20220824 14:41:24.556"/>
+<msg timestamp="20220824 16:06:21.879" level="TRACE">Arguments: [ 'Password:' | hidden=True ]</msg>
+<msg timestamp="20220824 16:06:27.521" level="TRACE">Return: '$22tbgmphrpftdoh'</msg>
+<msg timestamp="20220824 16:06:27.521" level="INFO">${DB_USER_PASSWORD_LCL} = $22tbgmphrpftdoh</msg>
+<status status="PASS" starttime="20220824 16:06:21.879" endtime="20220824 16:06:27.521"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${DB_USER_PASSWORD}</arg>
 <arg>${DB_USER_PASSWORD_LCL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220824 14:41:24.556" level="TRACE">Arguments: [ '${DB_USER_PASSWORD}' | '${DB_USER_PASSWORD_LCL}' ]</msg>
-<msg timestamp="20220824 14:41:24.556" level="INFO">${DB_USER_PASSWORD} = $22tbgmphrpftdoh</msg>
-<msg timestamp="20220824 14:41:24.556" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220824 14:41:24.556" endtime="20220824 14:41:24.556"/>
+<msg timestamp="20220824 16:06:27.521" level="TRACE">Arguments: [ '${DB_USER_PASSWORD}' | '${DB_USER_PASSWORD_LCL}' ]</msg>
+<msg timestamp="20220824 16:06:27.521" level="INFO">${DB_USER_PASSWORD} = $22tbgmphrpftdoh</msg>
+<msg timestamp="20220824 16:06:27.521" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220824 16:06:27.521" endtime="20220824 16:06:27.521"/>
 </kw>
 <kw name="Set Log Level" library="BuiltIn">
 <arg>${OLD_LOG_LEVEL}</arg>
 <doc>Sets the log threshold to the specified level and returns the old level.</doc>
-<msg timestamp="20220824 14:41:24.556" level="TRACE">Arguments: [ 'INFO' ]</msg>
-<msg timestamp="20220824 14:41:24.556" level="INFO">Log level changed from TRACE to INFO.</msg>
-<status status="PASS" starttime="20220824 14:41:24.556" endtime="20220824 14:41:24.556"/>
+<msg timestamp="20220824 16:06:27.529" level="TRACE">Arguments: [ 'INFO' ]</msg>
+<msg timestamp="20220824 16:06:27.529" level="INFO">Log level changed from TRACE to INFO.</msg>
+<status status="PASS" starttime="20220824 16:06:27.529" endtime="20220824 16:06:27.529"/>
 </kw>
-<status status="PASS" starttime="20220824 14:41:15.931" endtime="20220824 14:41:24.556"/>
+<status status="PASS" starttime="20220824 16:06:09.208" endtime="20220824 16:06:27.529"/>
 </kw>
 <test id="s1-s1-t1" name="UC18DWH241_US1_Testcase1: Monthly File Reconciliation (File: Enforce Non-Funeral- S224.ALL.IF.Mccyymm)">
 <kw name="Database connection" library="cloudera">
@@ -65,10 +65,10 @@
 <arg>user='${DB_USERNAME}',password='${DB_USER_PASSWORD}',host='${CLOUDERA_HOST}',port=${HIVE_PORT},auth_mechanism='LDAP'</arg>
 <doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
 connect to the database using the map string `db_custom_param_string`.</doc>
-<msg timestamp="20220824 14:41:24.707" level="INFO">Executing : Connect To Database Using Custom Params : impala.dbapi.connect(db_api_2.connect(user='e698063',password='$22tbgmphrpftdoh',host='cloudera.sanlam.co.za',port=10000,auth_mechanism='LDAP')) </msg>
-<status status="PASS" starttime="20220824 14:41:24.564" endtime="20220824 14:41:25.002"/>
+<msg timestamp="20220824 16:06:27.668" level="INFO">Executing : Connect To Database Using Custom Params : impala.dbapi.connect(db_api_2.connect(user='e698063',password='$22tbgmphrpftdoh',host='cloudera.sanlam.co.za',port=10000,auth_mechanism='LDAP')) </msg>
+<status status="PASS" starttime="20220824 16:06:27.529" endtime="20220824 16:06:27.977"/>
 </kw>
-<status status="PASS" starttime="20220824 14:41:24.564" endtime="20220824 14:41:25.002"/>
+<status status="PASS" starttime="20220824 16:06:27.529" endtime="20220824 16:06:27.977"/>
 </kw>
 <kw name="Hub test 0: Record count to ensure that the hub is loaded">
 <kw name="Query" library="DatabaseLibrary">
@@ -78,28 +78,28 @@ connect to the database using the map string `db_custom_param_string`.</doc>
 <doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
 input `sansTran` to True to run command without an explicit transaction commit or rollback.
 Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
-<msg timestamp="20220824 14:41:25.348" level="INFO">Executing : Query  |  select count(*) FROM groupbi_ads_e698063_spflab.skyreality_full_data </msg>
-<msg timestamp="20220824 14:41:26.103" level="INFO">Closing active operation</msg>
-<msg timestamp="20220824 14:41:26.135" level="INFO">${hub_test_1} = [(165534,)]</msg>
-<status status="PASS" starttime="20220824 14:41:25.002" endtime="20220824 14:41:26.135"/>
+<msg timestamp="20220824 16:06:28.041" level="INFO">Executing : Query  |  select count(*) FROM groupbi_ads_e698063_spflab.skyreality_full_data </msg>
+<msg timestamp="20220824 16:06:28.589" level="INFO">Closing active operation</msg>
+<msg timestamp="20220824 16:06:28.667" level="INFO">${hub_test_1} = [(165534,)]</msg>
+<status status="PASS" starttime="20220824 16:06:27.977" endtime="20220824 16:06:28.667"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${result_1}</var>
 <arg>${hub_test_1[0][0]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220824 14:41:26.135" level="INFO">${result_1} = 165534</msg>
-<status status="PASS" starttime="20220824 14:41:26.135" endtime="20220824 14:41:26.135"/>
+<msg timestamp="20220824 16:06:28.667" level="INFO">${result_1} = 165534</msg>
+<status status="PASS" starttime="20220824 16:06:28.667" endtime="20220824 16:06:28.667"/>
 </kw>
 <kw name="Should Not Be Equal As Integers" library="BuiltIn">
 <arg>0</arg>
 <arg>${result_1}</arg>
 <doc>Fails if objects are equal after converting them to integers.</doc>
-<msg timestamp="20220824 14:41:26.135" level="INFO">Argument types are:
+<msg timestamp="20220824 16:06:28.667" level="INFO">Argument types are:
 &lt;type 'unicode'&gt;
 &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20220824 14:41:26.135" endtime="20220824 14:41:26.135"/>
+<status status="PASS" starttime="20220824 16:06:28.667" endtime="20220824 16:06:28.667"/>
 </kw>
-<status status="PASS" starttime="20220824 14:41:25.002" endtime="20220824 14:41:26.135"/>
+<status status="PASS" starttime="20220824 16:06:27.977" endtime="20220824 16:06:28.667"/>
 </kw>
 <kw name="Hub test 1: No null business keys / hashkeys in current set (from staging)">
 <kw name="Query" library="DatabaseLibrary">
@@ -109,28 +109,28 @@ Set optional input `returnAsDict` to True to return values as a list of dictiona
 <doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
 input `sansTran` to True to run command without an explicit transaction commit or rollback.
 Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
-<msg timestamp="20220824 14:41:26.180" level="INFO">Executing : Query  |  select count(*) FROM groupbi_ads_e698063_spflab.skyreality_full_data where pty_id = NULL </msg>
-<msg timestamp="20220824 14:41:26.559" level="INFO">Closing active operation</msg>
-<msg timestamp="20220824 14:41:26.590" level="INFO">${hub_test_2} = [(0,)]</msg>
-<status status="PASS" starttime="20220824 14:41:26.135" endtime="20220824 14:41:26.590"/>
+<msg timestamp="20220824 16:06:28.723" level="INFO">Executing : Query  |  select count(*) FROM groupbi_ads_e698063_spflab.skyreality_full_data where pty_id = NULL </msg>
+<msg timestamp="20220824 16:06:29.067" level="INFO">Closing active operation</msg>
+<msg timestamp="20220824 16:06:29.123" level="INFO">${hub_test_2} = [(0,)]</msg>
+<status status="PASS" starttime="20220824 16:06:28.667" endtime="20220824 16:06:29.123"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${result_2}</var>
 <arg>${hub_test_2[0][0]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220824 14:41:26.590" level="INFO">${result_2} = 0</msg>
-<status status="PASS" starttime="20220824 14:41:26.590" endtime="20220824 14:41:26.590"/>
+<msg timestamp="20220824 16:06:29.123" level="INFO">${result_2} = 0</msg>
+<status status="PASS" starttime="20220824 16:06:29.123" endtime="20220824 16:06:29.123"/>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <arg>0</arg>
 <arg>${result_2}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<msg timestamp="20220824 14:41:26.590" level="INFO">Argument types are:
+<msg timestamp="20220824 16:06:29.123" level="INFO">Argument types are:
 &lt;type 'unicode'&gt;
 &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20220824 14:41:26.590" endtime="20220824 14:41:26.590"/>
+<status status="PASS" starttime="20220824 16:06:29.123" endtime="20220824 16:06:29.123"/>
 </kw>
-<status status="PASS" starttime="20220824 14:41:26.135" endtime="20220824 14:41:26.590"/>
+<status status="PASS" starttime="20220824 16:06:28.667" endtime="20220824 16:06:29.123"/>
 </kw>
 <kw name="Hub test 2: No duplicate business keys">
 <kw name="Query" library="DatabaseLibrary">
@@ -140,24 +140,24 @@ Set optional input `returnAsDict` to True to return values as a list of dictiona
 <doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
 input `sansTran` to True to run command without an explicit transaction commit or rollback.
 Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
-<msg timestamp="20220824 14:41:26.640" level="INFO">Executing : Query  |  select count(*),pty_id FROM groupbi_ads_e698063_spflab.skyreality_full_data group by pty_id having count(*) &gt; 1 </msg>
-<msg timestamp="20220824 14:41:26.838" level="INFO">Closing active operation</msg>
-<msg timestamp="20220824 14:41:26.881" level="INFO">${hub_test_3} = []</msg>
-<status status="PASS" starttime="20220824 14:41:26.605" endtime="20220824 14:41:26.881"/>
+<msg timestamp="20220824 16:06:29.202" level="INFO">Executing : Query  |  select count(*),pty_id FROM groupbi_ads_e698063_spflab.skyreality_full_data group by pty_id having count(*) &gt; 1 </msg>
+<msg timestamp="20220824 16:06:29.624" level="INFO">Closing active operation</msg>
+<msg timestamp="20220824 16:06:29.678" level="INFO">${hub_test_3} = []</msg>
+<status status="PASS" starttime="20220824 16:06:29.131" endtime="20220824 16:06:29.678"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${index}</var>
 <arg>0</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220824 14:41:26.881" level="INFO">${index} = 0</msg>
-<status status="PASS" starttime="20220824 14:41:26.881" endtime="20220824 14:41:26.881"/>
+<msg timestamp="20220824 16:06:29.678" level="INFO">${index} = 0</msg>
+<status status="PASS" starttime="20220824 16:06:29.678" endtime="20220824 16:06:29.678"/>
 </kw>
 <for flavor="IN">
 <var>${item}</var>
 <value>@{hub_test_3}</value>
-<status status="PASS" starttime="20220824 14:41:26.881" endtime="20220824 14:41:26.881"/>
+<status status="PASS" starttime="20220824 16:06:29.678" endtime="20220824 16:06:29.678"/>
 </for>
-<status status="PASS" starttime="20220824 14:41:26.590" endtime="20220824 14:41:26.881"/>
+<status status="PASS" starttime="20220824 16:06:29.131" endtime="20220824 16:06:29.678"/>
 </kw>
 <kw name="Hub test 3: No duplicate hash keys">
 <kw name="Query" library="DatabaseLibrary">
@@ -167,40 +167,40 @@ Set optional input `returnAsDict` to True to return values as a list of dictiona
 <doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
 input `sansTran` to True to run command without an explicit transaction commit or rollback.
 Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
-<msg timestamp="20220824 14:41:26.914" level="INFO">Executing : Query  |  select count(*),pty_id FROM groupbi_ads_e698063_spflab.skyreality_full_data group by pty_id having count(*) &gt; 1 </msg>
-<msg timestamp="20220824 14:41:27.149" level="INFO">Closing active operation</msg>
-<msg timestamp="20220824 14:41:27.183" level="INFO">${hub_test_4} = []</msg>
-<status status="PASS" starttime="20220824 14:41:26.881" endtime="20220824 14:41:27.183"/>
+<msg timestamp="20220824 16:06:29.736" level="INFO">Executing : Query  |  select count(*),pty_id FROM groupbi_ads_e698063_spflab.skyreality_full_data group by pty_id having count(*) &gt; 1 </msg>
+<msg timestamp="20220824 16:06:30.503" level="INFO">Closing active operation</msg>
+<msg timestamp="20220824 16:06:30.572" level="INFO">${hub_test_4} = []</msg>
+<status status="PASS" starttime="20220824 16:06:29.678" endtime="20220824 16:06:30.572"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${index}</var>
 <arg>0</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220824 14:41:27.183" level="INFO">${index} = 0</msg>
-<status status="PASS" starttime="20220824 14:41:27.183" endtime="20220824 14:41:27.183"/>
+<msg timestamp="20220824 16:06:30.572" level="INFO">${index} = 0</msg>
+<status status="PASS" starttime="20220824 16:06:30.572" endtime="20220824 16:06:30.572"/>
 </kw>
 <for flavor="IN">
 <var>${item}</var>
 <value>@{hub_test_4}</value>
-<status status="PASS" starttime="20220824 14:41:27.183" endtime="20220824 14:41:27.183"/>
+<status status="PASS" starttime="20220824 16:06:30.572" endtime="20220824 16:06:30.572"/>
 </for>
-<status status="PASS" starttime="20220824 14:41:26.881" endtime="20220824 14:41:27.183"/>
+<status status="PASS" starttime="20220824 16:06:29.678" endtime="20220824 16:06:30.572"/>
 </kw>
 <doc>LDWBI-485 - Reconcile 3 new monthly files which contains the inforce data for Legacy Non Funeral (Q1 - Jan - Mar, Q2 - April - Jun, Q3 - July - Sep, Q4 - Oct- Dec) to the original quarterly files on an attribute level grain using the same parameters (i.e. Date range) ( File: S224.ALL.IF.Mccyymm)</doc>
 <tag>integrity</tag>
-<status status="PASS" starttime="20220824 14:41:24.556" endtime="20220824 14:41:27.183"/>
+<status status="PASS" starttime="20220824 16:06:27.529" endtime="20220824 16:06:30.572"/>
 </test>
 <kw name="Perform Test Suite Teardown" library="cloudera" type="TEARDOWN">
 <kw name="Disconnect From Database" library="DatabaseLibrary">
 <doc>Disconnects from the database.</doc>
-<msg timestamp="20220824 14:41:27.188" level="INFO">Executing : Disconnect From Database</msg>
-<status status="PASS" starttime="20220824 14:41:27.188" endtime="20220824 14:41:27.188"/>
+<msg timestamp="20220824 16:06:30.582" level="INFO">Executing : Disconnect From Database</msg>
+<status status="PASS" starttime="20220824 16:06:30.581" endtime="20220824 16:06:30.582"/>
 </kw>
-<status status="PASS" starttime="20220824 14:41:27.188" endtime="20220824 14:41:27.188"/>
+<status status="PASS" starttime="20220824 16:06:30.581" endtime="20220824 16:06:30.582"/>
 </kw>
-<status status="PASS" starttime="20220824 14:41:15.867" endtime="20220824 14:41:27.188"/>
+<status status="PASS" starttime="20220824 16:06:09.166" endtime="20220824 16:06:30.582"/>
 </suite>
-<status status="PASS" starttime="20220824 14:41:15.849" endtime="20220824 14:41:27.188"/>
+<status status="PASS" starttime="20220824 16:06:09.145" endtime="20220824 16:06:30.582"/>
 </suite>
 <statistics>
 <total>
